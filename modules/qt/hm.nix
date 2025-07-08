@@ -74,7 +74,7 @@
           "stylix: qt: Changing `config.qt.style` is unsupported and may result in breakage! Use with caution!"
         );
 
-      home.packages = lib.optional (config.qt.style.name == "kvantum") kvantumPackage;
+      home.packages = lib.optional (config.qt.style.name == "kvantum-dark") kvantumPackage;
 
       qt = {
         enable = true;
