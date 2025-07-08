@@ -42,7 +42,8 @@ in
           "qtct";
       qt = {
         enable = true;
-        style = recommendedStyle."${config.qt.platformTheme}" or null;
+        # style = recommendedStyle."${config.qt.platformTheme}" or null;
+        style = "kvantum-dark";
         platformTheme =
           if config.stylix.targets.qt.platform == "qtct" then
             "qt5ct"
